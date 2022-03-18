@@ -4,7 +4,7 @@ import matplotlib
 from matplotlib import pyplot as plt
 from sklearn.decomposition import PCA
 
-with open("E:\\Seagate Drive\\OM\\4th Semester Material\\Material Informatics\\Tutorial 2\\Data\\Two_pc_corr.csv") as file_name:
+with open("Data\\Two_pc_corr.csv") as file_name:
     array = np.loadtxt(file_name, delimiter=",")
 
 print(array.shape)

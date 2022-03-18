@@ -6,7 +6,6 @@ from sklearn.decomposition import PCA
 from sklearn.manifold import MDS
 from sklearn.metrics.pairwise import euclidean_distances as ED
 
-# with open("E:\\Seagate Drive\\OM\\4th Semester Material\\Material Informatics\\Tutorial 2\\Data\\Two_pc_corr.csv") as file_name:
 with open("Data\\Two_pc_corr.csv") as file_name:
 	array = np.loadtxt(file_name, delimiter=",")
 	print(array.shape)
