@@ -4,7 +4,7 @@ from matplotlib  import pyplot as plt
 
 xd = yd = 100
 
-seeds = 30  #number of grains
+seeds = 50  #number of grains
 book = []                                                                                                          
 for i in range(seeds):    
   x = np.random.randint(0, xd)
