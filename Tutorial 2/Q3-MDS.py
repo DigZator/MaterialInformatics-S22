@@ -49,3 +49,20 @@ ax = plt.axes(projection='3d')
 ax.scatter3D(xaxis, yaxis, zaxis, c=c)
 #fig.colorbar()
 plt.show()
+
+show_scree = True
+
+if show_scree:
+	stress65 = []
+	stress130 = []
+	for i in range(1,11):
+		embedding = MDS(n_components = i, random_state = 1)
+		val = embedding.fit_transform(arr)
+		stress65.append(embedding.stress_)
+		embedding = MDS(n_components = i, random_state = 1)
+		val = embedding.fit_transform(array)
+		stress130.append(embedding.stress_)
+	plt.plot(np.arange(1,11), stress65)
+	plt.show()
+	plt.plot(np.arange(1,11), stress130)
+	plt.show()
