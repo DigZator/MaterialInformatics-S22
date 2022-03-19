@@ -37,7 +37,7 @@ plt.imshow(ED(val))
 plt.axis('off')
 plt.title("PCA ED")
 
-embedding = MDS(n_components = 3)
+embedding = MDS(n_components = 3, random_state = 5)
 val = embedding.fit_transform(arr)
 
 #print(ED(val))

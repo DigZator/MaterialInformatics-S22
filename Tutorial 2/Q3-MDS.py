@@ -10,7 +10,7 @@ with open("Data\\Two_pc_corr.csv") as file_name:
 	arr = array[:, 0:65025]
 	print(arr.shape)
 
-embedding = MDS(n_components = 3)
+embedding = MDS(n_components = 3, random_state = 1)
 val = embedding.fit_transform(arr)
 #print(val)
 #print(val.shape)
@@ -30,7 +30,7 @@ ax.scatter3D(xaxis, yaxis, zaxis, c=c)
 #fig.colorbar()
 plt.show()
 
-embedding = MDS(n_components = 3)
+embedding = MDS(n_components = 3, random_state = 1)
 val = embedding.fit_transform(array)
 #print(val)
 #print(val.shape)
